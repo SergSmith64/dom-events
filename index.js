@@ -1,33 +1,15 @@
 console.log("DOM-Events___");
 let step = 0;
-const infoLogger = () => {
+const infoLogger = (event) => {
     step++;
-    console.log(`step - ${step}`, event.target);
+    // __убираю функционал по-умолчания -- переход по ссылке (по href)
+    if (event.target.tagName === 'A') {
+        event.preventDefault();
+    }
+    // _____________________
     console.log(`step - ${step}`, event.currentTarget);
+    document.querySelectorAll('tr').forEach(tr => tr.style.background = '');
+    event.target.parentElement.style.background = 'red';
 }
 
-// document.querySelector('li').addEventListener('click', infoLogger);
-document.querySelector('li').addEventListener('click', infoLogger);
-
-// document.querySelector('li').addEventListener('dblclick', infoLogger);
-
-// Right Key Click
-// document.querySelector('li').addEventListener('contextmenu', infoLogger);  
-// document.querySelector('li').addEventListener('mouseover', infoLogger);
-// document.querySelector('li').addEventListener('mouseout', infoLogger);
-// document.querySelector('li').addEventListener('mousedown', infoLogger);
-// document.querySelector('li').addEventListener('mouseup', infoLogger);
-// document.querySelector('li').addEventListener('click', infoLogger);
-// document.querySelector('li').addEventListener('click', infoLogger);
-
-// document.querySelector('li').addEventListener('click', infoLogger);
-// document.querySelector('li').addEventListener('copy', () => {
-//     console.log("Ha-Ha!!");
-//     document.querySelector('li').removeEventListener('click', infoLogger);
-// });
-
-
-
-// document.querySelector('li').removeEventListener('click', () => {
-//     console.log("action-2");
-// })
+document.querySelector('table').addEventListener('click', infoLogger);
