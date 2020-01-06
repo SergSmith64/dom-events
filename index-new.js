@@ -2,7 +2,10 @@ console.log("DOM-Events___");
 let step = 0;
 const infoLogger = () => {
     step++;
+    // console.log(`step - ${step}`, event.type);
+    // тот элемент, на котором была вызвана фунуцмя -- это таргет
     console.log(`step - ${step}`, event.target);
+    // __элемент, на котором ОТРАБОТАЛА эта функция - CURRENT-TARGET
     console.log(`step - ${step}`, event.currentTarget);
 }
 

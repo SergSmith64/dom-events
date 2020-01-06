@@ -2,6 +2,13 @@ body {
     min-width: 320px;
 }
 
+table {
+    border-collapse: collapse;
+}
+.selected {
+    background: red;
+}
+
 ul {
     list-style: none;
 }
