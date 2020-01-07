@@ -6,7 +6,7 @@ table {
     border-collapse: collapse;
 }
 .selected {
-    background: red;
+    background: green;
 }
 
 ul {

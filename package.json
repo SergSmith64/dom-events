@@ -1,0 +1,22 @@
+{
+  "name": "dom-events",
+  "version": "1.0.0",
+  "description": "start Jest",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SergSmith64/dom-events.git"
+  },
+  "keywords": [
+    "Jest"
+  ],
+  "author": "Sergei Kuznetcov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SergSmith64/dom-events/issues"
+  },
+  "homepage": "https://github.com/SergSmith64/dom-events#readme"
+}

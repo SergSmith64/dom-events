@@ -1,6 +1,7 @@
 console.log("DOM-Events___");
 let step = 0;
 const infoLogger = (event) => {
+    console.log("event___", event);
     step++;
     // __убираю функционал по-умолчания -- переход по ссылке (по href)
     if (event.target.tagName === 'A') {
@@ -8,7 +9,7 @@ const infoLogger = (event) => {
     }
     // _____________________
     console.log(`step - ${step}`, event.currentTarget);
-    document.querySelectorAll('tr').forEach(tr => tr.style.background = '');
+    document.querySelectorAll('tr').forEach(tr => tr.style.background = 'yellow');
     event.target.parentElement.style.background = 'red';
 }
 
