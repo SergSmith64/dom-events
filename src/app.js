@@ -8,29 +8,29 @@ console.log("Hello");
 // *** ВОПРОС - 4 ***
 // __передача данных по занчению и по ссылке__
 
-var message = "Hello";
-var phrase = message;
-console.log("__message__=",message);
-console.log("__phrase___=",phrase);
+// var message = "Hello";
+// var phrase = message;
+// console.log("__message__=",message);
+// console.log("__phrase___=",phrase);
 
-var message = "Good Bye";
-console.log("__message__=",message);
-console.log("__phrase___=",phrase);
+// var message = "Good Bye";
+// console.log("__message__=",message);
+// console.log("__phrase___=",phrase);
 
-console.log("______________________");
+// console.log("______________________");
 
-var user = {
-  name: "Вася"
-}
-var admin = user;
+// var user = {
+//   name: "Вася"
+// }
+// var admin = user;
 
-console.log("user.name__=", user.name);
-console.log("admin.name__=", admin.name);
+// console.log("user.name__=", user.name);
+// console.log("admin.name__=", admin.name);
 
-user.name = "Петя";
+// user.name = "Петя";
 
-console.log("user.name__=", user.name);
-console.log("admin.name__=", admin.name);
+// console.log("user.name__=", user.name);
+// console.log("admin.name__=", admin.name);
 
 // __ MakeWeb.me
 
@@ -79,3 +79,20 @@ console.log("admin.name__=", admin.name);
 // d = Boolean(c);
 // console.log(d);
 // console.log("__d =__TYPE OF_", typeof(d));
+
+
+
+// 21 ____________
+// Event Loop
+// Call Stack ____
+function multiply(a, b) {
+  return a * b;
+}
+function square(n) {
+  return multiply(n, n);
+}
+function printSquare(n) {
+  var squared = square(n);
+  console.log("Square = ", squared);
+}
+printSquare(4);
