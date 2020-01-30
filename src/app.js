@@ -85,14 +85,27 @@ console.log("Hello");
 // 21 ____________
 // Event Loop
 // Call Stack ____
-function multiply(a, b) {
+var n = 5;
+
+// setTimeout(
+  function multiply(a, b) {
+  console.log("A * B = ", a * b);
   return a * b;
 }
-function square(n) {
+// , 4000);
+
+// setTimeout(
+  function square(n) {
+  console.log("Multi___N_= ", multiply(n));
   return multiply(n, n);
 }
-function printSquare(n) {
+// , 5000);
+
+// setTimeout(
+  function printSquare(n) {
   var squared = square(n);
   console.log("Square = ", squared);
 }
+// , 6000);
+
 printSquare(4);
