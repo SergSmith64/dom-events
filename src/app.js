@@ -85,8 +85,7 @@ console.log("Hello");
 // 21 ____________
 // Event Loop
 // Call Stack ____
-var n = 5;
-
+var a = 12, b = 3;
 // setTimeout(
   function multiply(a, b) {
   console.log("A * B = ", a * b);
@@ -101,11 +100,11 @@ var n = 5;
 }
 // , 5000);
 
-// setTimeout(
+setTimeout(
   function printSquare(n) {
   var squared = square(n);
   console.log("Square = ", squared);
 }
-// , 6000);
+, 6000);
 
 printSquare(4);
