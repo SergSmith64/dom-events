@@ -85,26 +85,41 @@ console.log("Hello");
 // 21 ____________
 // Event Loop
 // Call Stack ____
-var a = 12, b = 3;
+// var a = 12, b = 3;
 // setTimeout(
-  function multiply(a, b) {
-  console.log("A * B = ", a * b);
-  return a * b;
-}
+//  function multiply(a, b) {
+//  console.log("A * B = ", a * b);
+//  return a * b;
+//}
 // , 4000);
 
 // setTimeout(
-  function square(n) {
-  console.log("Multi___N_= ", multiply(n));
-  return multiply(n, n);
-}
+//  function square(n) {
+//  console.log("Multi___N_= ", multiply(n));
+//  return multiply(n, n);
+//1}
 // , 5000);
 
-setTimeout(
-  function printSquare(n) {
-  var squared = square(n);
-  console.log("Square = ", squared);
-}
-, 6000);
+// setTimeout(
+//   function printSquare(n) {
+//   var squared = square(n);
+//   console.log("Square = ", squared);
+// }
+// , 6000);
 
-printSquare(4);
+// printSquare(4);
+
+
+// +++ ДОПОЛНИТЕЛЬНО +++
+
+// ES6 VARIABLES. Code Style
+
+function ttt() {
+  for (let i = 0; i < 4; i++) {
+    setTimeout(() => console.log("i__=", i), 3000);
+    setTimeout(function(){
+      console.log("==== I ====", i);
+    }, 2000)
+  }
+}
+ttt();
