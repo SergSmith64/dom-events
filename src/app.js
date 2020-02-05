@@ -117,6 +117,7 @@ console.log("Hello");
 function ttt() {
   for (let i = 0; i < 4; i++) {
     setTimeout(() => console.log("i__=", i), 3000);
+    console.log("i =", i);
     setTimeout(function(){
       console.log("==== I ====", i);
     }, 2000)
